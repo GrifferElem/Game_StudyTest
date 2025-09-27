@@ -9,12 +9,15 @@ public class NetworkLauncher : MonoBehaviourPunCallbacks{
     }
     public override void OnConnectedToMaster() {
         base.OnConnectedToMaster();
-
+        //加入或创建房间
         PhotonNetwork.JoinOrCreateRoom("Room", new Photon.Realtime.RoomOptions() { MaxPlayers = 4 }, default);
     }
     public override void OnJoinedRoom() {
         base.OnJoinedRoom();
 
-        PhotonNetwork.Instantiate("Player", new Vector3(0, 1, 0), Quaternion.identity, 0);
+        //初始化管理器
+        StateManager.instance.InitializeRoomState();
+        //实例化玩家
+        PhotonNetwork.Instantiate("Player", new Vector3(0, 1, 0), Quaternion.identity);
     }
 }

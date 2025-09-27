@@ -1,11 +1,10 @@
-using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Photon.Pun;
 
 public class Player : MonoBehaviourPun
 {
-    private PlayInput playInput;
+    public PlayInput playInput;
     private Vector2 inputDirection;
     private Rigidbody rb;
 
