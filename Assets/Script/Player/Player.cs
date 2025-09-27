@@ -1,8 +1,9 @@
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Photon.Pun;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviourPun
 {
     private PlayInput playInput;
     private Vector2 inputDirection;
@@ -22,6 +23,8 @@ public class Player : MonoBehaviour
         playInput.Disable();
     }
     private void FixedUpdate() {
+        if (!photonView.IsMine && PhotonNetwork.IsConnected) return;
+
         inputDirection = playInput.GamePlay.Move.ReadValue<Vector2>().normalized;
         Move(inputDirection);
     }
