@@ -40,6 +40,11 @@ MonoBehaviour:
   - Fire
   - RespawnSpaceship
   - Interacted
+  - RPC_Destory
+  - RPC_OnInteract
+  - RPC_RequestInteract
+  - RPC_DestroyObject
+  - RPC_ChestAnim
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

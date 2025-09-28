@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 using Photon.Pun;
 
 public class Player : MonoBehaviourPun
