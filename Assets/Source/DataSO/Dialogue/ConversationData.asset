@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edef3d01144122246a923de5924b5692, type: 3}
+  m_Name: ConversationData
+  m_EditorClassIdentifier: 
+  sentences:
+  - content: Hello www
+    name: www
+    avtorPic: {fileID: 21300000, guid: 2b50ada8456488c4399f86c37e3723fd, type: 3}
+  - content: "\u4F60\u597D"
+    name: yyy
+    avtorPic: {fileID: 21300000, guid: 8901e5259eba3f942a32e858f0ffaf0b, type: 3}
