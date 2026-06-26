@@ -8,6 +8,7 @@ using UnityEngine;
 public class Combat_CharacterInfo
 {
     public string charName;
+    public float maxHp,hp;
     public float attack;
     public float defense;
 
@@ -17,5 +18,5 @@ public class Combat_CharacterInfo
 public class Combat_Skill
 {
     public string skillName;
-    public int attack;
+    public float attack;
 }
